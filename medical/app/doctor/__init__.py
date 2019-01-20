@@ -1,0 +1,1 @@
+from app.doctor.views import doctor

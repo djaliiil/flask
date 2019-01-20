@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block body %}
+ 
+<div class="col-md-6">
+                        <section>
+                            
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="#">   name <span class="pull-right "> austin wambugu mutonyi</span></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">  date of birth <span class="pull-right ">1993</span></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">  bloodtype <span class="pull-right ">o</span></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">  email <span class="pull-right ">{{ user.username }}</span></a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">  phone <span class="pull-right ">892939239</span></a>
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </aside>
+                    </div>
+
+
+
+ 
+
+ <div class="col-md-6">
+                         <div class="card">
+                                    <div class="card-header">
+                                        <strong class="card-title">Contents</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-success" role="alert">
+                                            <h4 class="alert-heading">Well done!</h4>
+                                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                            <hr>
+                                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                        </div>
+
+                                        <div class="alert alert-warning" role="alert">
+                                            <h4 class="alert-heading">Well done!</h4>
+                                            <blockquote class="blockquote mb-0 text-light">
+                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+
+</div>
+ 
+  
+
+<div class="col-md-4">
+                        <div class="alert alert-success">
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0 text-light">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+ 
+
+{% endblock %}

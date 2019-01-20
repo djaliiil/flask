@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+{% from "_formhelpers.html" import render_field %}
+
+
+<div class="container">
+  <h6 class="form"> add </h6>
+  <div class="row justify-content-md-center">
+  	  
+      
+<form action="{{ url_for('admin.edit_user',user_id=user.id) }}" method="post" enctype="multipart/form-data">  
+
+         <dl>
+ 
+
+    {{ render_field(form.role) }}
+    {{ render_field(form.submit) }}
+    
+       </dl>
+  <p>
+ 
+</form>
+
+ 
+ 
+ 
+
+{% endblock %}

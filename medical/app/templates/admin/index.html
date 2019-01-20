@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+ 
+{% from "_formhelpers.html" import render_field %}
+ 
+{% block body %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <h2 class="ui header">
+                Admin Dashboard
+            </h2>
+            <div class="ui two column stackable grid">
+            	
+            	
+            	<section>
+                            
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                         <a href="/admin/users"> newuser <span class="pull-right "> all users</span></a>  
+                                    </li>
+                                    <li class="list-group-item">
+                                         <a href="/admin/new-user"> newuser <span class="pull-right "> add new user</span></a> 
+                                    </li>
+                                    
+                                </ul>
+
+                            </section>
+
+              
+            </div>
+        </div>
+    </div>
+{% endblock %} 

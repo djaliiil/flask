@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+{% from "_formhelpers.html" import render_field %}
+
+
+    <div class="container">
+
+      <form class="form-signin" method="POST" action="/admin/new-user">
+        <h2 class="form-signin-heading">User sign in</h2>
+     
+        {{ render_field(form.username)}}
+        {{ render_field(form.password)}}
+        {{ render_field(form.email)}}
+        {{ render_field(form.fullname)}}
+        {{ render_field(form.phone)}}
+        {{ render_field(form.role)}}
+        {{ render_field(form.submit)}}
+    
+      </form>
+
+    </div> <!-- /container -->
+{% endblock %}
+
+
+ 
